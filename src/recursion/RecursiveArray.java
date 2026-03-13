@@ -15,7 +15,7 @@ public class RecursiveArray {
     }
     private static void doubleArrayHelper(int[] array, int index) {
         if(index < array.length) {
-        array[index] *= array[index];
+        array[index] = array[index] * 2;
         doubleArrayHelper(array, index + 1);
         }
     }
