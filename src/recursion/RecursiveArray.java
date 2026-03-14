@@ -1,6 +1,16 @@
 package recursion;
 import java.util.Arrays;
 
+/*
+Problem: Double each value in an array using recursion
+Approach:
+1. Process current index
+2. Multiply value by 2
+3. Recurse to next index
+
+Time: O(n)
+Space: O(n) recursion stack
+*/
 public class RecursiveArray {
     public static void main(String[] args) {
     
