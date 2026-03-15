@@ -1,4 +1,5 @@
 package recursion;
+
 import java.util.Arrays;
 
 /*
@@ -13,8 +14,8 @@ Space: O(n) recursion stack
 */
 public class RecursiveArray {
     public static void main(String[] args) {
-    
-        int[] array = {1,2,3,4,5};
+
+        int[] array = {1, 2, 3, 4, 5};
         doubleArray(array);
         System.out.print(Arrays.toString(array));
     }
@@ -23,10 +24,11 @@ public class RecursiveArray {
     public static void doubleArray(int[] array) {
         doubleArrayHelper(array, 0);
     }
+
     private static void doubleArrayHelper(int[] array, int index) {
-        if(index < array.length) {
-        array[index] = array[index] * 2;
-        doubleArrayHelper(array, index + 1);
+        if (index < array.length) {
+            array[index] = array[index] * 2;
+            doubleArrayHelper(array, index + 1);
         }
     }
 }
