@@ -5,10 +5,10 @@ package recursion;
  Approach:
  1. check current index match target
  2. check next index
- 3. stop when index <= string length
+ 3. base case: when index reaches the end of string
 
- Time:
- Space:
+ Time: O(n); 1 recursive call per n
+ Space: O(n); recursion stack depth n
  */
 public class CharFrequency {
     public static int charFrequency(String word, char target) {
