@@ -13,8 +13,7 @@ public class Palindrome {
     }
 
     private static boolean palindromeHelper(int start, int end, String word) {
-        int mid = word.length()/2;
-        if(start >= mid) {
+        if(start > end) {
             return true;
         }
         if(word.charAt(start) != word.charAt(end)) {
